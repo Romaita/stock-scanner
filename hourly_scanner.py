@@ -1,7 +1,7 @@
 """
 Hourly stock scanner — pulls real quotes and scores them the same way
 as the dashboard's composite score (momentum + relative volume + RSI
-sweet-spot + MACD + trend).
+sweet-spot + MACD + trend + relative strength + 52-week breakout proximity).
 
 Requires: pip install yfinance pandas
 Run on a schedule (cron / Task Scheduler) at your desired interval, e.g.:
@@ -81,6 +81,16 @@ def rs_percentile_rank(scores: dict) -> dict:
     return percentiles
 
 
+def compute_52w_range(closes: pd.Series, current_price: float):
+    """Returns (pct off 52-week high, pct above 52-week low). Positive off_high
+    means below the high; e.g. -5.0 means 5% below the 52-week high."""
+    high_52w = float(closes.max())
+    low_52w = float(closes.min())
+    off_high = round((current_price - high_52w) / high_52w * 100, 1)
+    above_low = round((current_price - low_52w) / low_52w * 100, 1)
+    return off_high, above_low
+
+
 def compute_trend(closes: pd.Series) -> str:
     sma20 = closes.rolling(20).mean().iloc[-1]
     sma50 = closes.rolling(50).mean().iloc[-1] if len(closes) >= 50 else sma20
@@ -91,7 +101,7 @@ def compute_trend(closes: pd.Series) -> str:
     return "flat"
 
 
-def score(chg, rvol, rsi, macd, trend, rs_pct=50):
+def score(chg, rvol, rsi, macd, trend, rs_pct=50, off_high=None):
     momentum = max(-10, min(10, chg)) * 2.0
     vol_surge = min(rvol, 4) * 6
     if 55 <= rsi <= 72:
@@ -107,7 +117,14 @@ def score(chg, rvol, rsi, macd, trend, rs_pct=50):
     trend_fit = {"up": 7, "down": -7, "flat": 0}[trend]
     # relative strength vs benchmark, percentile 1-99 -> centered contribution
     rs_fit = (rs_pct - 50) * 0.3
-    raw = momentum + vol_surge + rsi_fit + macd_fit + trend_fit + rs_fit
+    # breakout proximity: within 5% of the 52-week high is a bullish signal
+    breakout_fit = 0
+    if off_high is not None:
+        if off_high >= -5:
+            breakout_fit = 5
+        elif off_high >= -10:
+            breakout_fit = 2
+    raw = momentum + vol_surge + rsi_fit + macd_fit + trend_fit + rs_fit + breakout_fit
     return round(max(0, min(100, 50 + raw)))
 
 
@@ -152,6 +169,7 @@ def main():
             rsi = round(compute_rsi(closes))
             macd = round(compute_macd(closes), 1)
             trend = compute_trend(closes)
+            off_high, above_low = compute_52w_range(closes, price)
 
             # relative strength vs SPY: weighted multi-period return, stock minus benchmark
             ticker_weighted = compute_weighted_return(closes)
@@ -167,6 +185,8 @@ def main():
                 "rsi": rsi,
                 "macd": macd,
                 "trend": trend,
+                "offHigh": off_high,
+                "aboveLow": above_low,
             })
         except Exception as e:
             print(f"error on {ticker}: {e}")
@@ -176,7 +196,7 @@ def main():
     results = []
     for r in raw:
         rs_pct = rs_pct_by_ticker.get(r["t"], 50)
-        s = score(r["chg"], r["rvol"], r["rsi"], r["macd"], r["trend"], rs_pct)
+        s = score(r["chg"], r["rvol"], r["rsi"], r["macd"], r["trend"], rs_pct, r["offHigh"])
         results.append({**r, "rs": rs_pct, "score": s})
 
     results.sort(key=lambda r: r["score"], reverse=True)
