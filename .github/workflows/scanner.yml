@@ -29,7 +29,8 @@ jobs:
 
       - name: Run scanner
         run: python five_min_scanner.py
-- name: Commit updated scan
+
+      - name: Commit updated scan
         run: |
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
@@ -37,4 +38,3 @@ jobs:
           git diff --quiet --cached || git commit -m "Update scan $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git pull --rebase origin main
           git push
-    
