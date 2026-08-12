@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T00:02:44.499725+00:00",
+  "generated_at": "2026-08-12T02:40:33.178461+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -943,9 +943,9 @@
       "rsi": 40,
       "macd": 0.0,
       "trend": "flat",
-      "offHigh": -2.1,
-      "aboveLow": 23.0,
-      "rs": 52,
+      "offHigh": -1.9,
+      "aboveLow": 23.2,
+      "rs": 53,
       "score": 73
     },
     {
@@ -1058,7 +1058,7 @@
       "sector": "Other",
       "price": 75.35,
       "chg": 0.3,
-      "vol": 0.31,
+      "vol": 0.63,
       "rvol": 5.5,
       "rsi": 66,
       "macd": 0.1,
@@ -1096,21 +1096,6 @@
       "offHigh": -32.3,
       "aboveLow": 20.8,
       "rs": 7,
-      "score": 70
-    },
-    {
-      "t": "AON",
-      "sector": "Other",
-      "price": 356.36,
-      "chg": -0.2,
-      "vol": 0.03,
-      "rvol": 5.3,
-      "rsi": 25,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -6.3,
-      "aboveLow": 15.9,
-      "rs": 53,
       "score": 70
     },
     {
@@ -1171,6 +1156,21 @@
       "offHigh": -55.2,
       "aboveLow": 26.5,
       "rs": 2,
+      "score": 69
+    },
+    {
+      "t": "AON",
+      "sector": "Other",
+      "price": 356.36,
+      "chg": -0.2,
+      "vol": 0.03,
+      "rvol": 5.3,
+      "rsi": 25,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -6.3,
+      "aboveLow": 15.9,
+      "rs": 52,
       "score": 69
     },
     {
@@ -1344,7 +1344,7 @@
       "price": 490.66,
       "chg": -0.0,
       "vol": 0.11,
-      "rvol": 5.6,
+      "rvol": 5.7,
       "rsi": 36,
       "macd": -0.0,
       "trend": "flat",
