@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T07:47:46.054042+00:00",
+  "generated_at": "2026-08-12T08:56:18.760366+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -64,21 +64,6 @@
       "score": 97
     },
     {
-      "t": "EOG",
-      "sector": "Other",
-      "price": 143.41,
-      "chg": 0.2,
-      "vol": 0.21,
-      "rvol": 5.7,
-      "rsi": 73,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -3.6,
-      "aboveLow": 44.4,
-      "rs": 81,
-      "score": 96
-    },
-    {
       "t": "KLAC",
       "sector": "Other",
       "price": 200.46,
@@ -120,7 +105,7 @@
       "trend": "flat",
       "offHigh": -4.7,
       "aboveLow": 38.5,
-      "rs": 72,
+      "rs": 73,
       "score": 95
     },
     {
@@ -180,7 +165,7 @@
       "trend": "flat",
       "offHigh": -2.8,
       "aboveLow": 54.1,
-      "rs": 83,
+      "rs": 82,
       "score": 92
     },
     {
@@ -195,7 +180,7 @@
       "trend": "flat",
       "offHigh": -3.5,
       "aboveLow": 39.1,
-      "rs": 82,
+      "rs": 81,
       "score": 92
     },
     {
@@ -240,7 +225,7 @@
       "trend": "flat",
       "offHigh": -6.0,
       "aboveLow": 36.6,
-      "rs": 65,
+      "rs": 66,
       "score": 90
     },
     {
@@ -270,7 +255,7 @@
       "trend": "flat",
       "offHigh": -7.4,
       "aboveLow": 72.5,
-      "rs": 64,
+      "rs": 65,
       "score": 90
     },
     {
@@ -304,6 +289,21 @@
       "score": 87
     },
     {
+      "t": "KO",
+      "sector": "Other",
+      "price": 86.5,
+      "chg": -0.2,
+      "vol": 0.95,
+      "rvol": 6.8,
+      "rsi": 46,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -2.9,
+      "aboveLow": 34.4,
+      "rs": 67,
+      "score": 87
+    },
+    {
       "t": "PYPL",
       "sector": "Other",
       "price": 59.0,
@@ -331,21 +331,6 @@
       "offHigh": -6.5,
       "aboveLow": 42.8,
       "rs": 74,
-      "score": 86
-    },
-    {
-      "t": "KO",
-      "sector": "Other",
-      "price": 86.5,
-      "chg": -0.2,
-      "vol": 0.95,
-      "rvol": 6.8,
-      "rsi": 46,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -2.9,
-      "aboveLow": 34.4,
-      "rs": 66,
       "score": 86
     },
     {
@@ -379,21 +364,6 @@
       "score": 86
     },
     {
-      "t": "XOM",
-      "sector": "Other",
-      "price": 159.8,
-      "chg": 0.1,
-      "vol": 1.65,
-      "rvol": 8.7,
-      "rsi": 54,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -6.2,
-      "aboveLow": 55.4,
-      "rs": 68,
-      "score": 85
-    },
-    {
       "t": "CVS",
       "sector": "Other",
       "price": 93.5,
@@ -405,8 +375,8 @@
       "trend": "flat",
       "offHigh": -14.9,
       "aboveLow": 47.3,
-      "rs": 56,
-      "score": 85
+      "rs": 57,
+      "score": 86
     },
     {
       "t": "C",
@@ -420,7 +390,22 @@
       "trend": "flat",
       "offHigh": -6.3,
       "aboveLow": 49.7,
-      "rs": 71,
+      "rs": 72,
+      "score": 86
+    },
+    {
+      "t": "XOM",
+      "sector": "Other",
+      "price": 159.8,
+      "chg": 0.1,
+      "vol": 1.65,
+      "rvol": 8.7,
+      "rsi": 54,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -6.2,
+      "aboveLow": 55.4,
+      "rs": 69,
       "score": 85
     },
     {
@@ -454,6 +439,21 @@
       "score": 84
     },
     {
+      "t": "SHW",
+      "sector": "Other",
+      "price": 364.42,
+      "chg": 0.1,
+      "vol": 0.11,
+      "rvol": 6.5,
+      "rsi": 47,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -2.2,
+      "aboveLow": 24.4,
+      "rs": 55,
+      "score": 84
+    },
+    {
       "t": "BAC",
       "sector": "Other",
       "price": 64.0,
@@ -480,7 +480,7 @@
       "trend": "flat",
       "offHigh": -8.5,
       "aboveLow": 40.5,
-      "rs": 58,
+      "rs": 59,
       "score": 83
     },
     {
@@ -495,22 +495,7 @@
       "trend": "flat",
       "offHigh": -6.2,
       "aboveLow": 42.0,
-      "rs": 61,
-      "score": 83
-    },
-    {
-      "t": "SHW",
-      "sector": "Other",
-      "price": 364.42,
-      "chg": 0.1,
-      "vol": 0.11,
-      "rvol": 6.5,
-      "rsi": 47,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -2.2,
-      "aboveLow": 24.4,
-      "rs": 54,
+      "rs": 62,
       "score": 83
     },
     {
@@ -527,6 +512,21 @@
       "aboveLow": 36.1,
       "rs": 49,
       "score": 82
+    },
+    {
+      "t": "ABT",
+      "sector": "Other",
+      "price": 109.75,
+      "chg": -0.1,
+      "vol": 0.54,
+      "rvol": 6.4,
+      "rsi": 46,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -17.8,
+      "aboveLow": 33.9,
+      "rs": 63,
+      "score": 81
     },
     {
       "t": "BKNG",
@@ -559,21 +559,6 @@
       "score": 81
     },
     {
-      "t": "ABT",
-      "sector": "Other",
-      "price": 109.75,
-      "chg": -0.1,
-      "vol": 0.54,
-      "rvol": 6.4,
-      "rsi": 46,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -17.8,
-      "aboveLow": 33.9,
-      "rs": 62,
-      "score": 80
-    },
-    {
       "t": "UPS",
       "sector": "Other",
       "price": 104.43,
@@ -586,6 +571,21 @@
       "offHigh": -11.3,
       "aboveLow": 32.7,
       "rs": 39,
+      "score": 80
+    },
+    {
+      "t": "SBUX",
+      "sector": "Other",
+      "price": 106.66,
+      "chg": -0.1,
+      "vol": 0.31,
+      "rvol": 5.1,
+      "rsi": 79,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -1.6,
+      "aboveLow": 38.6,
+      "rs": 51,
       "score": 80
     },
     {
@@ -615,7 +615,7 @@
       "trend": "flat",
       "offHigh": -0.0,
       "aboveLow": 29.2,
-      "rs": 73,
+      "rs": 74,
       "score": 79
     },
     {
@@ -631,21 +631,6 @@
       "offHigh": -25.5,
       "aboveLow": 31.5,
       "rs": 34,
-      "score": 79
-    },
-    {
-      "t": "SBUX",
-      "sector": "Other",
-      "price": 106.66,
-      "chg": -0.1,
-      "vol": 0.31,
-      "rvol": 5.1,
-      "rsi": 79,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -1.6,
-      "aboveLow": 38.6,
-      "rs": 50,
       "score": 79
     },
     {
@@ -690,7 +675,7 @@
       "trend": "flat",
       "offHigh": -0.3,
       "aboveLow": 26.2,
-      "rs": 69,
+      "rs": 70,
       "score": 78
     },
     {
@@ -720,7 +705,7 @@
       "trend": "down",
       "offHigh": -13.5,
       "aboveLow": 44.7,
-      "rs": 51,
+      "rs": 52,
       "score": 77
     },
     {
@@ -765,7 +750,7 @@
       "trend": "flat",
       "offHigh": -1.4,
       "aboveLow": 23.9,
-      "rs": 67,
+      "rs": 68,
       "score": 77
     },
     {
@@ -784,21 +769,6 @@
       "score": 76
     },
     {
-      "t": "SPGI",
-      "sector": "Other",
-      "price": 408.6,
-      "chg": -0.0,
-      "vol": 0.11,
-      "rvol": 5.2,
-      "rsi": 58,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -22.8,
-      "aboveLow": 11.0,
-      "rs": 23,
-      "score": 75
-    },
-    {
       "t": "AMZN",
       "sector": "Other",
       "price": 272.28,
@@ -810,23 +780,8 @@
       "trend": "flat",
       "offHigh": -4.1,
       "aboveLow": 37.0,
-      "rs": 59,
-      "score": 74
-    },
-    {
-      "t": "PG",
-      "sector": "Other",
-      "price": 145.21,
-      "chg": -0.1,
-      "vol": 0.49,
-      "rvol": 4.9,
-      "rsi": 56,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -11.8,
-      "aboveLow": 7.5,
-      "rs": 21,
-      "score": 74
+      "rs": 60,
+      "score": 75
     },
     {
       "t": "CMCSA",
@@ -840,7 +795,82 @@
       "trend": "flat",
       "offHigh": -19.0,
       "aboveLow": 17.1,
-      "rs": 20,
+      "rs": 21,
+      "score": 75
+    },
+    {
+      "t": "SPGI",
+      "sector": "Other",
+      "price": 408.6,
+      "chg": -0.0,
+      "vol": 0.11,
+      "rvol": 5.2,
+      "rsi": 58,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -22.8,
+      "aboveLow": 11.0,
+      "rs": 24,
+      "score": 75
+    },
+    {
+      "t": "CI",
+      "sector": "Other",
+      "price": 273.75,
+      "chg": 0.3,
+      "vol": 0.14,
+      "rvol": 5.3,
+      "rsi": 64,
+      "macd": 0.1,
+      "trend": "flat",
+      "offHigh": -10.5,
+      "aboveLow": 13.9,
+      "rs": 18,
+      "score": 75
+    },
+    {
+      "t": "PG",
+      "sector": "Other",
+      "price": 145.21,
+      "chg": -0.1,
+      "vol": 0.49,
+      "rvol": 4.9,
+      "rsi": 56,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -11.8,
+      "aboveLow": 7.5,
+      "rs": 22,
+      "score": 74
+    },
+    {
+      "t": "DIS",
+      "sector": "Other",
+      "price": 103.53,
+      "chg": 0.0,
+      "vol": 0.64,
+      "rvol": 7.7,
+      "rsi": 59,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -11.6,
+      "aboveLow": 12.9,
+      "rs": 19,
+      "score": 74
+    },
+    {
+      "t": "GS",
+      "sector": "Other",
+      "price": 1034.13,
+      "chg": 0.2,
+      "vol": 0.13,
+      "rvol": 6.6,
+      "rsi": 40,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -10.2,
+      "aboveLow": 47.3,
+      "rs": 71,
       "score": 74
     },
     {
@@ -870,7 +900,7 @@
       "trend": "flat",
       "offHigh": -4.5,
       "aboveLow": 30.2,
-      "rs": 57,
+      "rs": 58,
       "score": 74
     },
     {
@@ -885,22 +915,7 @@
       "trend": "flat",
       "offHigh": -1.6,
       "aboveLow": 44.0,
-      "rs": 60,
-      "score": 74
-    },
-    {
-      "t": "CI",
-      "sector": "Other",
-      "price": 273.75,
-      "chg": 0.3,
-      "vol": 0.14,
-      "rvol": 5.3,
-      "rsi": 64,
-      "macd": 0.1,
-      "trend": "flat",
-      "offHigh": -10.5,
-      "aboveLow": 13.9,
-      "rs": 17,
+      "rs": 61,
       "score": 74
     },
     {
@@ -915,7 +930,7 @@
       "trend": "flat",
       "offHigh": -6.9,
       "aboveLow": 9.9,
-      "rs": 24,
+      "rs": 25,
       "score": 74
     },
     {
@@ -930,7 +945,7 @@
       "trend": "flat",
       "offHigh": -21.3,
       "aboveLow": 23.3,
-      "rs": 19,
+      "rs": 20,
       "score": 74
     },
     {
@@ -945,22 +960,7 @@
       "trend": "flat",
       "offHigh": -1.9,
       "aboveLow": 23.2,
-      "rs": 53,
-      "score": 73
-    },
-    {
-      "t": "DIS",
-      "sector": "Other",
-      "price": 103.53,
-      "chg": 0.0,
-      "vol": 0.64,
-      "rvol": 7.7,
-      "rsi": 59,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -11.6,
-      "aboveLow": 12.9,
-      "rs": 18,
+      "rs": 54,
       "score": 73
     },
     {
@@ -976,21 +976,6 @@
       "offHigh": -11.8,
       "aboveLow": 25.5,
       "rs": 15,
-      "score": 73
-    },
-    {
-      "t": "GS",
-      "sector": "Other",
-      "price": 1034.13,
-      "chg": 0.2,
-      "vol": 0.13,
-      "rvol": 6.6,
-      "rsi": 40,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -10.2,
-      "aboveLow": 47.3,
-      "rs": 70,
       "score": 73
     },
     {
@@ -1035,7 +1020,7 @@
       "trend": "flat",
       "offHigh": -6.5,
       "aboveLow": 11.1,
-      "rs": 25,
+      "rs": 26,
       "score": 72
     },
     {
@@ -1080,7 +1065,7 @@
       "trend": "flat",
       "offHigh": -20.7,
       "aboveLow": 108.6,
-      "rs": 63,
+      "rs": 64,
       "score": 70
     },
     {
@@ -1096,6 +1081,21 @@
       "offHigh": -32.3,
       "aboveLow": 20.8,
       "rs": 7,
+      "score": 70
+    },
+    {
+      "t": "AON",
+      "sector": "Other",
+      "price": 356.36,
+      "chg": -0.2,
+      "vol": 0.03,
+      "rvol": 5.3,
+      "rsi": 25,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -6.3,
+      "aboveLow": 15.9,
+      "rs": 53,
       "score": 70
     },
     {
@@ -1125,7 +1125,22 @@
       "trend": "flat",
       "offHigh": -28.3,
       "aboveLow": 36.3,
-      "rs": 22,
+      "rs": 23,
+      "score": 69
+    },
+    {
+      "t": "DHR",
+      "sector": "Other",
+      "price": 207.4,
+      "chg": -0.1,
+      "vol": 0.17,
+      "rvol": 5.7,
+      "rsi": 33,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -14.0,
+      "aboveLow": 28.4,
+      "rs": 56,
       "score": 69
     },
     {
@@ -1159,21 +1174,6 @@
       "score": 69
     },
     {
-      "t": "AON",
-      "sector": "Other",
-      "price": 356.36,
-      "chg": -0.2,
-      "vol": 0.03,
-      "rvol": 5.3,
-      "rsi": 25,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -6.3,
-      "aboveLow": 15.9,
-      "rs": 52,
-      "score": 69
-    },
-    {
       "t": "MA",
       "sector": "Other",
       "price": 561.57,
@@ -1186,21 +1186,6 @@
       "offHigh": -5.7,
       "aboveLow": 19.3,
       "rs": 47,
-      "score": 68
-    },
-    {
-      "t": "DHR",
-      "sector": "Other",
-      "price": 207.4,
-      "chg": -0.1,
-      "vol": 0.17,
-      "rvol": 5.7,
-      "rsi": 33,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -14.0,
-      "aboveLow": 28.4,
-      "rs": 55,
       "score": 68
     },
     {
