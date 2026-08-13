@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T23:10:07.211921+00:00",
+  "generated_at": "2026-08-13T00:00:02.036378+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -79,32 +79,17 @@
       "score": 95
     },
     {
-      "t": "ABBV",
+      "t": "ADP",
       "sector": "Other",
-      "price": 248.66,
-      "chg": -0.1,
-      "vol": 0.33,
-      "rvol": 6.3,
-      "rsi": 63,
-      "macd": 0.0,
+      "price": 269.33,
+      "chg": 0.3,
+      "vol": 0.2,
+      "rvol": 5.2,
+      "rsi": 74,
+      "macd": 0.1,
       "trend": "flat",
-      "offHigh": -5.6,
-      "aboveLow": 27.3,
-      "rs": 76,
-      "score": 93
-    },
-    {
-      "t": "RTX",
-      "sector": "Other",
-      "price": 222.76,
-      "chg": -0.0,
-      "vol": 0.32,
-      "rvol": 7.7,
-      "rsi": 48,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -0.6,
-      "aboveLow": 48.5,
+      "offHigh": -10.4,
+      "aboveLow": 43.7,
       "rs": 86,
       "score": 93
     },
@@ -120,7 +105,22 @@
       "trend": "flat",
       "offHigh": -1.2,
       "aboveLow": 86.1,
-      "rs": 84,
+      "rs": 83,
+      "score": 92
+    },
+    {
+      "t": "ABBV",
+      "sector": "Other",
+      "price": 248.66,
+      "chg": -0.1,
+      "vol": 0.33,
+      "rvol": 6.3,
+      "rsi": 63,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -5.6,
+      "aboveLow": 27.3,
+      "rs": 75,
       "score": 92
     },
     {
@@ -135,22 +135,22 @@
       "trend": "flat",
       "offHigh": -5.5,
       "aboveLow": 37.8,
-      "rs": 85,
+      "rs": 84,
       "score": 92
     },
     {
-      "t": "ADP",
+      "t": "RTX",
       "sector": "Other",
-      "price": 269.33,
-      "chg": 0.3,
-      "vol": 0.2,
-      "rvol": 5.2,
-      "rsi": 74,
-      "macd": 0.1,
+      "price": 222.76,
+      "chg": -0.0,
+      "vol": 0.32,
+      "rvol": 7.7,
+      "rsi": 48,
+      "macd": -0.0,
       "trend": "flat",
-      "offHigh": -10.4,
-      "aboveLow": 43.7,
-      "rs": 83,
+      "offHigh": -0.6,
+      "aboveLow": 48.5,
+      "rs": 85,
       "score": 92
     },
     {
@@ -180,7 +180,7 @@
       "trend": "flat",
       "offHigh": 0.0,
       "aboveLow": 41.0,
-      "rs": 60,
+      "rs": 59,
       "score": 91
     },
     {
@@ -195,7 +195,7 @@
       "trend": "flat",
       "offHigh": -0.7,
       "aboveLow": 39.6,
-      "rs": 75,
+      "rs": 76,
       "score": 90
     },
     {
@@ -229,21 +229,6 @@
       "score": 88
     },
     {
-      "t": "BLK",
-      "sector": "Other",
-      "price": 1161.48,
-      "chg": 0.0,
-      "vol": 0.03,
-      "rvol": 4.4,
-      "rsi": 68,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -1.9,
-      "aboveLow": 26.6,
-      "rs": 49,
-      "score": 88
-    },
-    {
       "t": "NVDA",
       "sector": "Semis",
       "price": 224.13,
@@ -255,7 +240,7 @@
       "trend": "flat",
       "offHigh": -4.8,
       "aboveLow": 35.9,
-      "rs": 45,
+      "rs": 46,
       "score": 87
     },
     {
@@ -289,19 +274,49 @@
       "score": 87
     },
     {
+      "t": "BLK",
+      "sector": "Other",
+      "price": 1161.48,
+      "chg": 0.0,
+      "vol": 0.03,
+      "rvol": 4.4,
+      "rsi": 68,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -1.9,
+      "aboveLow": 26.6,
+      "rs": 47,
+      "score": 87
+    },
+    {
       "t": "CSCO",
       "sector": "Other",
-      "price": 123.92,
-      "chg": 0.2,
+      "price": 123.97,
+      "chg": 0.3,
       "vol": 3.06,
       "rvol": 5.8,
-      "rsi": 39,
+      "rsi": 40,
       "macd": -0.0,
       "trend": "flat",
       "offHigh": -4.3,
       "aboveLow": 91.1,
       "rs": 94,
       "score": 86
+    },
+    {
+      "t": "MSFT",
+      "sector": "Other",
+      "price": 492.44,
+      "chg": -0.3,
+      "vol": 1.27,
+      "rvol": 5.1,
+      "rsi": 47,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -8.6,
+      "aboveLow": 39.6,
+      "rs": 71,
+      "score": 85
     },
     {
       "t": "MA",
@@ -315,7 +330,7 @@
       "trend": "flat",
       "offHigh": -6.0,
       "aboveLow": 18.9,
-      "rs": 48,
+      "rs": 49,
       "score": 84
     },
     {
@@ -369,7 +384,7 @@
       "price": 416.24,
       "chg": 0.0,
       "vol": 0.19,
-      "rvol": 7.3,
+      "rvol": 7.4,
       "rsi": 43,
       "macd": -0.0,
       "trend": "flat",
@@ -409,6 +424,21 @@
       "score": 82
     },
     {
+      "t": "WFC",
+      "sector": "Other",
+      "price": 88.96,
+      "chg": 0.1,
+      "vol": 0.68,
+      "rvol": 5.4,
+      "rsi": 49,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -6.2,
+      "aboveLow": 21.9,
+      "rs": 61,
+      "score": 82
+    },
+    {
       "t": "PM",
       "sector": "Other",
       "price": 186.25,
@@ -424,6 +454,21 @@
       "score": 82
     },
     {
+      "t": "GE",
+      "sector": "Other",
+      "price": 365.22,
+      "chg": 0.1,
+      "vol": 0.14,
+      "rvol": 5.8,
+      "rsi": 35,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -4.2,
+      "aboveLow": 38.0,
+      "rs": 83,
+      "score": 82
+    },
+    {
       "t": "PLD",
       "sector": "Other",
       "price": 140.75,
@@ -435,7 +480,7 @@
       "trend": "flat",
       "offHigh": -6.2,
       "aboveLow": 37.8,
-      "rs": 37,
+      "rs": 38,
       "score": 82
     },
     {
@@ -480,7 +525,7 @@
       "trend": "flat",
       "offHigh": -9.0,
       "aboveLow": 20.5,
-      "rs": 36,
+      "rs": 37,
       "score": 81
     },
     {
@@ -514,6 +559,21 @@
       "score": 81
     },
     {
+      "t": "AXP",
+      "sector": "Other",
+      "price": 344.13,
+      "chg": 0.2,
+      "vol": 0.17,
+      "rvol": 6.0,
+      "rsi": 71,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -9.9,
+      "aboveLow": 18.4,
+      "rs": 35,
+      "score": 81
+    },
+    {
       "t": "AON",
       "sector": "Other",
       "price": 352.27,
@@ -525,7 +585,7 @@
       "trend": "flat",
       "offHigh": -7.4,
       "aboveLow": 14.5,
-      "rs": 57,
+      "rs": 56,
       "score": 81
     },
     {
@@ -556,21 +616,6 @@
       "offHigh": -16.9,
       "aboveLow": 219.4,
       "rs": 96,
-      "score": 80
-    },
-    {
-      "t": "WFC",
-      "sector": "Other",
-      "price": 88.96,
-      "chg": 0.1,
-      "vol": 0.68,
-      "rvol": 5.4,
-      "rsi": 49,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -6.2,
-      "aboveLow": 21.9,
-      "rs": 54,
       "score": 80
     },
     {
@@ -615,7 +660,7 @@
       "trend": "flat",
       "offHigh": -13.8,
       "aboveLow": 48.3,
-      "rs": 58,
+      "rs": 57,
       "score": 79
     },
     {
@@ -651,11 +696,11 @@
     {
       "t": "VZ",
       "sector": "Other",
-      "price": 46.99,
+      "price": 46.98,
       "chg": 0.2,
       "vol": 0.84,
       "rvol": 5.7,
-      "rsi": 54,
+      "rsi": 53,
       "macd": -0.0,
       "trend": "flat",
       "offHigh": -5.6,
@@ -724,6 +769,21 @@
       "score": 77
     },
     {
+      "t": "MDT",
+      "sector": "Other",
+      "price": 90.77,
+      "chg": 0.1,
+      "vol": 0.42,
+      "rvol": 4.1,
+      "rsi": 49,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -11.7,
+      "aboveLow": 24.2,
+      "rs": 48,
+      "score": 77
+    },
+    {
       "t": "ITW",
       "sector": "Other",
       "price": 292.56,
@@ -780,7 +840,7 @@
       "trend": "flat",
       "offHigh": -1.5,
       "aboveLow": 44.2,
-      "rs": 59,
+      "rs": 58,
       "score": 74
     },
     {
@@ -795,7 +855,7 @@
       "trend": "flat",
       "offHigh": -2.8,
       "aboveLow": 22.1,
-      "rs": 55,
+      "rs": 54,
       "score": 73
     },
     {
@@ -811,6 +871,21 @@
       "offHigh": -11.7,
       "aboveLow": 25.5,
       "rs": 12,
+      "score": 73
+    },
+    {
+      "t": "IBM",
+      "sector": "Other",
+      "price": 235.98,
+      "chg": 0.1,
+      "vol": 0.32,
+      "rvol": 5.1,
+      "rsi": 66,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -27.8,
+      "aboveLow": 15.5,
+      "rs": 17,
       "score": 73
     },
     {
@@ -885,7 +960,7 @@
       "trend": "flat",
       "offHigh": -5.9,
       "aboveLow": 42.4,
-      "rs": 61,
+      "rs": 60,
       "score": 72
     },
     {
@@ -915,37 +990,7 @@
       "trend": "flat",
       "offHigh": -11.7,
       "aboveLow": 25.2,
-      "rs": 31,
-      "score": 72
-    },
-    {
-      "t": "AXP",
-      "sector": "Other",
-      "price": 344.13,
-      "chg": 0.2,
-      "vol": 0.17,
-      "rvol": 2.5,
-      "rsi": 71,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -9.9,
-      "aboveLow": 18.4,
-      "rs": 35,
-      "score": 72
-    },
-    {
-      "t": "CB",
-      "sector": "Other",
-      "price": 343.24,
-      "chg": 0.0,
-      "vol": 0.07,
-      "rvol": 5.8,
-      "rsi": 36,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -5.6,
-      "aboveLow": 28.8,
-      "rs": 56,
+      "rs": 30,
       "score": 71
     },
     {
@@ -979,6 +1024,21 @@
       "score": 70
     },
     {
+      "t": "CB",
+      "sector": "Other",
+      "price": 343.24,
+      "chg": 0.0,
+      "vol": 0.07,
+      "rvol": 5.8,
+      "rsi": 36,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -5.6,
+      "aboveLow": 28.8,
+      "rs": 55,
+      "score": 70
+    },
+    {
       "t": "CMCSA",
       "sector": "Other",
       "price": 25.47,
@@ -991,21 +1051,6 @@
       "offHigh": -19.6,
       "aboveLow": 16.2,
       "rs": 20,
-      "score": 69
-    },
-    {
-      "t": "GE",
-      "sector": "Other",
-      "price": 365.22,
-      "chg": 0.1,
-      "vol": 0.14,
-      "rvol": 1.8,
-      "rsi": 35,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -4.2,
-      "aboveLow": 38.0,
-      "rs": 83,
       "score": 69
     },
     {
@@ -1050,23 +1095,8 @@
       "trend": "flat",
       "offHigh": -5.8,
       "aboveLow": 25.4,
-      "rs": 46,
+      "rs": 45,
       "score": 68
-    },
-    {
-      "t": "MSFT",
-      "sector": "Other",
-      "price": 492.44,
-      "chg": -0.3,
-      "vol": 1.27,
-      "rvol": 1.1,
-      "rsi": 47,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -8.6,
-      "aboveLow": 39.6,
-      "rs": 71,
-      "score": 67
     },
     {
       "t": "TSLA",
@@ -1189,6 +1219,21 @@
       "score": 65
     },
     {
+      "t": "TJX",
+      "sector": "Other",
+      "price": 152.6,
+      "chg": 0.1,
+      "vol": 0.28,
+      "rvol": 4.0,
+      "rsi": 35,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -9.4,
+      "aboveLow": 16.1,
+      "rs": 36,
+      "score": 65
+    },
+    {
       "t": "PYPL",
       "sector": "Other",
       "price": 59.21,
@@ -1217,36 +1262,6 @@
       "aboveLow": 32.0,
       "rs": 40,
       "score": 64
-    },
-    {
-      "t": "TJX",
-      "sector": "Other",
-      "price": 152.6,
-      "chg": 0.1,
-      "vol": 0.28,
-      "rvol": 4.0,
-      "rsi": 35,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -9.4,
-      "aboveLow": 16.1,
-      "rs": 30,
-      "score": 63
-    },
-    {
-      "t": "PGR",
-      "sector": "Other",
-      "price": 207.39,
-      "chg": 0.0,
-      "vol": 0.2,
-      "rvol": 6.6,
-      "rsi": 39,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -12.6,
-      "aboveLow": 9.0,
-      "rs": 38,
-      "score": 63
     },
     {
       "t": "ORCL",
@@ -1279,6 +1294,21 @@
       "score": 62
     },
     {
+      "t": "PGR",
+      "sector": "Other",
+      "price": 207.39,
+      "chg": 0.0,
+      "vol": 0.2,
+      "rvol": 6.6,
+      "rsi": 39,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -12.6,
+      "aboveLow": 9.0,
+      "rs": 32,
+      "score": 62
+    },
+    {
       "t": "HD",
       "sector": "Other",
       "price": 343.44,
@@ -1290,22 +1320,7 @@
       "trend": "flat",
       "offHigh": -17.2,
       "aboveLow": 16.3,
-      "rs": 32,
-      "score": 61
-    },
-    {
-      "t": "MDT",
-      "sector": "Other",
-      "price": 90.77,
-      "chg": 0.1,
-      "vol": 0.42,
-      "rvol": 1.5,
-      "rsi": 49,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -11.7,
-      "aboveLow": 24.2,
-      "rs": 47,
+      "rs": 31,
       "score": 61
     },
     {
@@ -1354,6 +1369,21 @@
       "score": 59
     },
     {
+      "t": "MO",
+      "sector": "Other",
+      "price": 64.4,
+      "chg": -0.1,
+      "vol": 0.46,
+      "rvol": 4.8,
+      "rsi": 34,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -14.0,
+      "aboveLow": 21.5,
+      "rs": 25,
+      "score": 59
+    },
+    {
       "t": "PG",
       "sector": "Other",
       "price": 144.08,
@@ -1366,21 +1396,6 @@
       "offHigh": -12.5,
       "aboveLow": 6.7,
       "rs": 21,
-      "score": 58
-    },
-    {
-      "t": "IBM",
-      "sector": "Other",
-      "price": 235.98,
-      "chg": 0.1,
-      "vol": 0.32,
-      "rvol": 1.5,
-      "rsi": 66,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -27.8,
-      "aboveLow": 15.5,
-      "rs": 17,
       "score": 58
     },
     {
@@ -1474,6 +1489,21 @@
       "score": 54
     },
     {
+      "t": "LOW",
+      "sector": "Other",
+      "price": 215.99,
+      "chg": -0.0,
+      "vol": 0.16,
+      "rvol": 5.8,
+      "rsi": 30,
+      "macd": -0.1,
+      "trend": "flat",
+      "offHigh": -24.0,
+      "aboveLow": 7.0,
+      "rs": 10,
+      "score": 54
+    },
+    {
       "t": "ISRG",
       "sector": "Other",
       "price": 401.3,
@@ -1502,36 +1532,6 @@
       "aboveLow": 20.6,
       "rs": 2,
       "score": 52
-    },
-    {
-      "t": "MO",
-      "sector": "Other",
-      "price": 64.4,
-      "chg": -0.1,
-      "vol": 0.46,
-      "rvol": 1.2,
-      "rsi": 34,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -14.0,
-      "aboveLow": 21.5,
-      "rs": 25,
-      "score": 42
-    },
-    {
-      "t": "LOW",
-      "sector": "Other",
-      "price": 215.99,
-      "chg": -0.0,
-      "vol": 0.16,
-      "rvol": 1.8,
-      "rsi": 30,
-      "macd": -0.1,
-      "trend": "flat",
-      "offHigh": -24.0,
-      "aboveLow": 7.0,
-      "rs": 10,
-      "score": 41
     }
   ]
 }
