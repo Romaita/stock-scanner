@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T00:45:41.995435+00:00",
+  "generated_at": "2026-08-14T03:16:19.076846+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -750,7 +750,7 @@
       "trend": "flat",
       "offHigh": -12.0,
       "aboveLow": 9.7,
-      "rs": 35,
+      "rs": 34,
       "score": 76
     },
     {
@@ -1269,13 +1269,13 @@
       "price": 230.33,
       "chg": 0.2,
       "vol": 0.23,
-      "rvol": 5.1,
+      "rvol": 5.3,
       "rsi": 44,
       "macd": -0.0,
       "trend": "flat",
       "offHigh": -8.7,
       "aboveLow": 28.6,
-      "rs": 36,
+      "rs": 35,
       "score": 65
     },
     {
@@ -1321,6 +1321,21 @@
       "offHigh": -9.6,
       "aboveLow": 19.8,
       "rs": 32,
+      "score": 62
+    },
+    {
+      "t": "TJX",
+      "sector": "Other",
+      "price": 153.8,
+      "chg": -0.0,
+      "vol": 0.41,
+      "rvol": 6.0,
+      "rsi": 88,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -8.4,
+      "aboveLow": 17.4,
+      "rs": 36,
       "score": 62
     },
     {
@@ -1396,21 +1411,6 @@
       "offHigh": -12.6,
       "aboveLow": 21.0,
       "rs": 29,
-      "score": 61
-    },
-    {
-      "t": "TJX",
-      "sector": "Other",
-      "price": 153.8,
-      "chg": -0.0,
-      "vol": 0.41,
-      "rvol": 6.0,
-      "rsi": 88,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -8.7,
-      "aboveLow": 17.0,
-      "rs": 34,
       "score": 61
     },
     {
