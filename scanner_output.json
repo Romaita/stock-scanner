@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T17:42:03.671441+00:00",
+  "generated_at": "2026-08-15T18:00:05.464332+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -240,8 +240,8 @@
       "trend": "flat",
       "offHigh": -9.2,
       "aboveLow": 45.7,
-      "rs": 86,
-      "score": 90
+      "rs": 87,
+      "score": 91
     },
     {
       "t": "AMD",
@@ -270,7 +270,7 @@
       "trend": "flat",
       "offHigh": -6.4,
       "aboveLow": 21.6,
-      "rs": 62,
+      "rs": 61,
       "score": 89
     },
     {
@@ -300,7 +300,7 @@
       "trend": "flat",
       "offHigh": -3.4,
       "aboveLow": 39.2,
-      "rs": 87,
+      "rs": 86,
       "score": 88
     },
     {
@@ -630,7 +630,7 @@
       "trend": "flat",
       "offHigh": -4.1,
       "aboveLow": 43.6,
-      "rs": 71,
+      "rs": 72,
       "score": 78
     },
     {
@@ -690,7 +690,7 @@
       "trend": "flat",
       "offHigh": -13.9,
       "aboveLow": 72.1,
-      "rs": 26,
+      "rs": 25,
       "score": 76
     },
     {
@@ -720,7 +720,7 @@
       "trend": "flat",
       "offHigh": -5.3,
       "aboveLow": 27.3,
-      "rs": 73,
+      "rs": 71,
       "score": 76
     },
     {
@@ -735,22 +735,22 @@
       "trend": "flat",
       "offHigh": -9.8,
       "aboveLow": 48.0,
-      "rs": 72,
+      "rs": 73,
       "score": 76
     },
     {
-      "t": "VRTX",
+      "t": "REGN",
       "sector": "Other",
-      "price": 505.55,
+      "price": 803.51,
       "chg": 0.1,
-      "vol": 0.08,
-      "rvol": 5.9,
-      "rsi": 30,
+      "vol": 0.04,
+      "rvol": 6.2,
+      "rsi": 45,
       "macd": -0.0,
       "trend": "flat",
-      "offHigh": -4.6,
-      "aboveLow": 34.2,
-      "rs": 61,
+      "offHigh": -0.8,
+      "aboveLow": 45.2,
+      "rs": 62,
       "score": 76
     },
     {
@@ -769,18 +769,18 @@
       "score": 75
     },
     {
-      "t": "REGN",
+      "t": "VRTX",
       "sector": "Other",
-      "price": 803.51,
+      "price": 505.55,
       "chg": 0.1,
-      "vol": 0.04,
-      "rvol": 6.2,
-      "rsi": 45,
+      "vol": 0.08,
+      "rvol": 5.9,
+      "rsi": 30,
       "macd": -0.0,
       "trend": "flat",
-      "offHigh": -0.8,
-      "aboveLow": 45.2,
-      "rs": 59,
+      "offHigh": -4.6,
+      "aboveLow": 34.2,
+      "rs": 60,
       "score": 75
     },
     {
@@ -870,7 +870,7 @@
       "trend": "flat",
       "offHigh": -6.0,
       "aboveLow": 53.7,
-      "rs": 60,
+      "rs": 59,
       "score": 72
     },
     {
@@ -960,7 +960,7 @@
       "trend": "flat",
       "offHigh": -11.7,
       "aboveLow": 24.8,
-      "rs": 25,
+      "rs": 27,
       "score": 70
     },
     {
@@ -1155,7 +1155,7 @@
       "trend": "flat",
       "offHigh": -9.3,
       "aboveLow": 20.1,
-      "rs": 36,
+      "rs": 35,
       "score": 65
     },
     {
@@ -1230,7 +1230,7 @@
       "trend": "flat",
       "offHigh": -10.3,
       "aboveLow": 17.9,
-      "rs": 35,
+      "rs": 34,
       "score": 62
     },
     {
@@ -1260,7 +1260,7 @@
       "trend": "flat",
       "offHigh": -11.7,
       "aboveLow": 10.1,
-      "rs": 34,
+      "rs": 36,
       "score": 62
     },
     {
@@ -1276,21 +1276,6 @@
       "offHigh": -33.7,
       "aboveLow": 34.2,
       "rs": 13,
-      "score": 60
-    },
-    {
-      "t": "SYK",
-      "sector": "Other",
-      "price": 338.66,
-      "chg": -0.3,
-      "vol": 0.22,
-      "rvol": 5.5,
-      "rsi": 35,
-      "macd": -0.0,
-      "trend": "flat",
-      "offHigh": -13.2,
-      "aboveLow": 20.2,
-      "rs": 27,
       "score": 60
     },
     {
@@ -1321,6 +1306,21 @@
       "offHigh": -53.7,
       "aboveLow": 30.7,
       "rs": 3,
+      "score": 59
+    },
+    {
+      "t": "SYK",
+      "sector": "Other",
+      "price": 338.66,
+      "chg": -0.3,
+      "vol": 0.22,
+      "rvol": 5.5,
+      "rsi": 35,
+      "macd": -0.0,
+      "trend": "flat",
+      "offHigh": -13.2,
+      "aboveLow": 20.2,
+      "rs": 26,
       "score": 59
     },
     {
