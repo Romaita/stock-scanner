@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T22:56:31.294747+00:00",
+  "generated_at": "2026-08-15T23:27:47.471446+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -270,7 +270,7 @@
       "trend": "flat",
       "offHigh": -6.4,
       "aboveLow": 21.6,
-      "rs": 61,
+      "rs": 62,
       "score": 89
     },
     {
@@ -375,7 +375,7 @@
       "trend": "flat",
       "offHigh": -8.1,
       "aboveLow": 29.3,
-      "rs": 43,
+      "rs": 42,
       "score": 83
     },
     {
@@ -630,7 +630,7 @@
       "trend": "flat",
       "offHigh": -4.1,
       "aboveLow": 43.6,
-      "rs": 72,
+      "rs": 71,
       "score": 78
     },
     {
@@ -720,7 +720,7 @@
       "trend": "flat",
       "offHigh": -5.3,
       "aboveLow": 27.3,
-      "rs": 71,
+      "rs": 73,
       "score": 76
     },
     {
@@ -735,22 +735,22 @@
       "trend": "flat",
       "offHigh": -9.8,
       "aboveLow": 48.0,
-      "rs": 73,
+      "rs": 72,
       "score": 76
     },
     {
-      "t": "REGN",
+      "t": "VRTX",
       "sector": "Other",
-      "price": 803.51,
+      "price": 505.55,
       "chg": 0.1,
-      "vol": 0.04,
-      "rvol": 6.2,
-      "rsi": 45,
+      "vol": 0.08,
+      "rvol": 5.9,
+      "rsi": 30,
       "macd": -0.0,
       "trend": "flat",
-      "offHigh": -0.8,
-      "aboveLow": 45.2,
-      "rs": 62,
+      "offHigh": -4.6,
+      "aboveLow": 34.2,
+      "rs": 61,
       "score": 76
     },
     {
@@ -769,18 +769,18 @@
       "score": 75
     },
     {
-      "t": "VRTX",
+      "t": "REGN",
       "sector": "Other",
-      "price": 505.55,
+      "price": 803.51,
       "chg": 0.1,
-      "vol": 0.08,
-      "rvol": 5.9,
-      "rsi": 30,
+      "vol": 0.04,
+      "rvol": 6.2,
+      "rsi": 45,
       "macd": -0.0,
       "trend": "flat",
-      "offHigh": -4.6,
-      "aboveLow": 34.2,
-      "rs": 60,
+      "offHigh": -0.8,
+      "aboveLow": 45.2,
+      "rs": 59,
       "score": 75
     },
     {
@@ -870,7 +870,7 @@
       "trend": "flat",
       "offHigh": -6.0,
       "aboveLow": 53.7,
-      "rs": 59,
+      "rs": 60,
       "score": 72
     },
     {
@@ -1084,6 +1084,21 @@
       "score": 67
     },
     {
+      "t": "CL",
+      "sector": "Other",
+      "price": 91.94,
+      "chg": -0.1,
+      "vol": 0.29,
+      "rvol": 4.8,
+      "rsi": 43,
+      "macd": 0.0,
+      "trend": "flat",
+      "offHigh": -6.2,
+      "aboveLow": 24.8,
+      "rs": 43,
+      "score": 67
+    },
+    {
       "t": "BRK.B",
       "sector": "Other",
       "price": 503.99,
@@ -1111,21 +1126,6 @@
       "offHigh": -12.6,
       "aboveLow": 74.5,
       "rs": 77,
-      "score": 66
-    },
-    {
-      "t": "CL",
-      "sector": "Other",
-      "price": 91.94,
-      "chg": -0.1,
-      "vol": 0.29,
-      "rvol": 4.8,
-      "rsi": 43,
-      "macd": 0.0,
-      "trend": "flat",
-      "offHigh": -6.2,
-      "aboveLow": 24.8,
-      "rs": 42,
       "score": 66
     },
     {
@@ -1221,10 +1221,10 @@
     {
       "t": "AXP",
       "sector": "Other",
-      "price": 342.44,
+      "price": 342.43,
       "chg": 0.0,
       "vol": 0.16,
-      "rvol": 7.5,
+      "rvol": 7.6,
       "rsi": 43,
       "macd": -0.0,
       "trend": "flat",
