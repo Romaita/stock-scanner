@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T06:14:06.058073+00:00",
+  "generated_at": "2026-08-15T07:02:05.567206+00:00",
   "benchmark": "SPY",
   "interval": "5m",
   "stocks": [
@@ -96,15 +96,15 @@
     {
       "t": "KLAC",
       "sector": "Other",
-      "price": 203.75,
+      "price": 203.72,
       "chg": 0.2,
       "vol": 0.54,
       "rvol": 6.0,
-      "rsi": 61,
+      "rsi": 60,
       "macd": -0.0,
       "trend": "flat",
       "offHigh": -32.5,
-      "aboveLow": 142.5,
+      "aboveLow": 142.4,
       "rs": 93,
       "score": 96
     },
@@ -240,8 +240,8 @@
       "trend": "flat",
       "offHigh": -9.2,
       "aboveLow": 45.7,
-      "rs": 87,
-      "score": 91
+      "rs": 86,
+      "score": 90
     },
     {
       "t": "AMD",
@@ -300,7 +300,7 @@
       "trend": "flat",
       "offHigh": -3.4,
       "aboveLow": 39.2,
-      "rs": 86,
+      "rs": 87,
       "score": 88
     },
     {
@@ -630,7 +630,7 @@
       "trend": "flat",
       "offHigh": -4.1,
       "aboveLow": 43.6,
-      "rs": 72,
+      "rs": 71,
       "score": 78
     },
     {
@@ -720,7 +720,7 @@
       "trend": "flat",
       "offHigh": -5.3,
       "aboveLow": 27.3,
-      "rs": 71,
+      "rs": 73,
       "score": 76
     },
     {
@@ -735,7 +735,7 @@
       "trend": "flat",
       "offHigh": -9.8,
       "aboveLow": 48.0,
-      "rs": 73,
+      "rs": 72,
       "score": 76
     },
     {
