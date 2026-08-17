@@ -11,20 +11,6 @@ Run on a schedule (cron / Task Scheduler) every 5 minutes, e.g.:
 Writes results to scanner_output.json each run, which you can point a
 real dashboard at (e.g. serve it and fetch() it from a hosted version
 of the artifact, or feed it into your own backend).
-
-NOTE on data sources:
-  - Price / volume / RSI / MACD / trend now come from 5-minute bars
-    (Yahoo only keeps ~60 days of 5m history, and only 5 days per
-    single download call, hence period="5d" below).
-  - 52-week high/low and the multi-month relative-strength calc still
-    need daily history spanning a year, so those two things are pulled
-    once from daily bars each run (cheap — 1 extra batch call) rather
-    than being derived from the 5-day intraday window.
-  - Market cap, P/E, analyst recommendation, and next earnings date come
-    from TradingView-Screener (see fetch_tradingview_fields below). If
-    that call fails for any reason (network, renamed field, etc.) the
-    scanner still runs fine — those four fields just come back as null
-    and the dashboard shows "–" for them.
 """
 
 import json
@@ -35,16 +21,14 @@ from tradingview_screener import Query, col
 
 TICKERS = ['AAPL', 'MSFT', 'GOOG', 'GOOGL', 'AMZN', 'META', 'NVDA', 'TSLA', 'AVGO', 'BRK.B', 'JPM', 'V', 'MA', 'UNH', 'LLY', 'XOM', 'JNJ', 'PG', 'HD', 'MRK', 'ABBV', 'CVX', 'COST', 'PEP', 'KO', 'ADBE', 'WMT', 'CRM', 'BAC', 'MCD', 'CSCO', 'NFLX', 'TMO', 'ACN', 'ABT', 'LIN', 'DIS', 'AMD', 'DHR', 'WFC', 'TXN', 'PM', 'VZ', 'NEE', 'INTU', 'CMCSA', 'ORCL', 'IBM', 'QCOM', 'AMGN', 'HON', 'UPS', 'CAT', 'LOW', 'SPGI', 'INTC', 'BA', 'GE', 'PLD', 'AMAT', 'UNP', 'SBUX', 'GS', 'RTX', 'BKNG', 'ELV', 'DE', 'MDT', 'BLK', 'ADI', 'ISRG', 'GILD', 'LRCX', 'MMC', 'SYK', 'AXP', 'VRTX', 'CVS', 'C', 'PANW', 'CB', 'REGN', 'MU', 'ADP', 'TJX', 'ETN', 'FI', 'ZTS', 'SLB', 'SO', 'CI', 'BSX', 'MO', 'PYPL', 'SCHW', 'DUK', 'PGR', 'EOG', 'AON', 'CDNS', 'ITW', 'KLAC', 'CL', 'SHW']
 
-# Indicator windows, scaled for 5-minute bars (a trading day is ~78 bars).
-RSI_PERIOD = 14        # ~70 min lookback (same bar-count convention as daily RSI-14)
+RSI_PERIOD = 14
 MACD_FAST = 12
 MACD_SLOW = 26
 MACD_SIGNAL = 9
-SMA_SHORT = 20         # ~100 min
-SMA_LONG = 50          # ~4 hours
+SMA_SHORT = 20
+SMA_LONG = 50
 
 def to_yf_symbol(ticker: str) -> str:
-    """Yahoo Finance uses a dash where the official ticker has a dot, e.g. BRK.B -> BRK-B."""
     return ticker.replace(".", "-")
 
 SECTOR_MAP = {
@@ -57,8 +41,7 @@ SECTOR_MAP = {
     "ENPH": "Energy",
 }
 
-
-def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
+def compute_rsi(closes, period=RSI_PERIOD):
     delta = closes.diff()
     gain = delta.clip(lower=0).rolling(period).mean()
     loss = (-delta.clip(upper=0)).rolling(period).mean()
@@ -66,8 +49,7 @@ def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
     rsi = 100 - (100 / (1 + rs))
     return float(rsi.iloc[-1])
 
-
-def compute_macd(closes: pd.Series) -> float:
+def compute_macd(closes):
     ema12 = closes.ewm(span=MACD_FAST).mean()
     ema26 = closes.ewm(span=MACD_SLOW).mean()
     macd_line = ema12 - ema26
@@ -76,21 +58,18 @@ def compute_macd(closes: pd.Series) -> float:
     price = float(closes.iloc[-1])
     return float(hist.iloc[-1] / price * 100)
 
-
-def compute_weighted_return(closes: pd.Series) -> float:
+def compute_weighted_return(closes):
     def pct_return(period_days):
         if len(closes) <= period_days:
             return 0.0
         return float((closes.iloc[-1] - closes.iloc[-period_days]) / closes.iloc[-period_days])
-
     r3 = pct_return(63)
     r6 = pct_return(126)
     r9 = pct_return(189)
     r12 = pct_return(252)
     return 0.4 * r3 + 0.2 * r6 + 0.2 * r9 + 0.2 * r12
 
-
-def rs_percentile_rank(scores: dict) -> dict:
+def rs_percentile_rank(scores):
     ranked = sorted(scores.items(), key=lambda kv: kv[1])
     n = len(ranked)
     percentiles = {}
@@ -99,16 +78,14 @@ def rs_percentile_rank(scores: dict) -> dict:
         percentiles[ticker] = pct
     return percentiles
 
-
-def compute_52w_range(daily_closes: pd.Series, current_price: float):
+def compute_52w_range(daily_closes, current_price):
     high_52w = float(daily_closes.max())
     low_52w = float(daily_closes.min())
     off_high = round((current_price - high_52w) / high_52w * 100, 1)
     above_low = round((current_price - low_52w) / low_52w * 100, 1)
     return off_high, above_low
 
-
-def compute_trend(closes: pd.Series) -> str:
+def compute_trend(closes):
     sma20 = closes.rolling(SMA_SHORT).mean().iloc[-1]
     sma50 = closes.rolling(SMA_LONG).mean().iloc[-1] if len(closes) >= SMA_LONG else sma20
     if sma20 > sma50 * 1.005:
@@ -116,7 +93,6 @@ def compute_trend(closes: pd.Series) -> str:
     if sma20 < sma50 * 0.995:
         return "down"
     return "flat"
-
 
 def score(chg, rvol, rsi, macd, trend, rs_pct=50, off_high=None):
     momentum = max(-10, min(10, chg)) * 2.0
@@ -141,21 +117,11 @@ def score(chg, rvol, rsi, macd, trend, rs_pct=50, off_high=None):
     raw = momentum + vol_surge + rsi_fit + macd_fit + trend_fit + rs_fit + breakout_fit
     return round(max(0, min(100, 50 + raw)))
 
-
-def fetch_tradingview_fields(tickers: list) -> dict:
-    """Pull supplementary fundamentals/ratings from TradingView-Screener.
-    Never raises — on any failure this just returns {} so the core
-    scanner still runs and those fields show as null/'–'."""
+def fetch_tradingview_fields(tickers):
     try:
         _, df = (
             Query()
-            .select(
-                'name',
-                'market_cap_basic',
-                'price_earnings_ttm',
-                'recommendation_mark',
-                'earnings_release_next_date',
-            )
+            .select('name', 'market_cap_basic', 'price_earnings_ttm', 'recommendation_mark', 'earnings_release_next_date')
             .where(col('name').isin(tickers))
             .set_markets('america')
             .get_scanner_data()
@@ -163,7 +129,6 @@ def fetch_tradingview_fields(tickers: list) -> dict:
     except Exception as e:
         print(f"tradingview-screener fetch failed, skipping extra fields: {e}")
         return {}
-
     out = {}
     for _, row in df.iterrows():
         out[row['name']] = {
@@ -173,7 +138,6 @@ def fetch_tradingview_fields(tickers: list) -> dict:
             'nextEarnings': row.get('earnings_release_next_date'),
         }
     return out
-
 
 def main():
     yf_symbols = [to_yf_symbol(t) for t in TICKERS]
@@ -275,7 +239,6 @@ def main():
     print(f"Wrote {len(results)} tickers to scanner_output.json at {output['generated_at']}")
     for r in results[:5]:
         print(f"  {r['t']:6s} score={r['score']:3d}  RS={r['rs']:3d}  chg={r['chg']:+.1f}%  rvol={r['rvol']}x  rsi={r['rsi']}")
-
 
 if __name__ == "__main__":
     main()
